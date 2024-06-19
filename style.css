@@ -1,0 +1,92 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.profilePhoto{
+
+  height: 300px;
+  width: 250px;
+ border: solid black;
+  margin-top: 15px;
+
+}
+.background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-image:url(/images/Kuala-Lumpur-Skyline-scaled-e1580202172195.jpeg) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+}
+  
+.navbar{
+  background-color: red;
+  font-family:  Calibri;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navdiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  font-size: 35px;
+  font-weight: 600px;
+  color: #fff;
+}
+
+.navdiv li{
+  list-style: none;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.navdiv a{
+color: white;
+font-weight: bold;
+margin-right: 25px;
+}
+
+.one{
+  text-align: center;
+  justify-content: center;
+}
+
+
+.content{
+  color: #fff;
+  
+  text-align: center;
+  justify-content: center;
+}
+
+.content h1{
+  font-size: 95px;
+  margin-bottom: 5px;
+}
+
+.content h2{
+  font: size 35px;
+  margin-bottom: 10px;
+}
+
+.logo1 li{
+  display: inline-block;
+}
+
+.quote{
+  text-align: center;
+}
