@@ -4,82 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Work</title>
-  <link rel="stylesheet" href="./style.css" />
-  <style>
-    .backgroundMyWork{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      min-height: 100vh;
-      background-image:url(images/Kuala-Lumpur-Skyline-scaled-e1580202172195.jpeg) ;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      filter: blur(50px);
-      z-index: -1;
-    }
-    
-    .box1{
-      height: 300px;
-      width: 205px;
-      border: solid whitesmoke 5px;
-      margin-bottom: 50px;
-      margin-right: 200px;
-      margin-left: 125px;
-    
-     
-      
-    }
-
-    .box2{
-      height: 300px;
-      width: 205px;
-      border: solid whitesmoke 5px;
-      margin-right: 200px;
+  <link rel="stylesheet" href="style.css" />
   
-      
-     
-      
-      
-      
-    }
 
-    .box3{
-      height: 300px;
-      width: 205px;
-      border: solid whitesmoke 5px;
-     
-    }
-
-    body li{
-      list-style: none;
-      display: inline-block;
-    }
-
-    ul{
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: whitesmoke
-    }
-    
-  
-    </style>
+<div class="container"> 
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo"><a href="#">My Portfolio Website</a></div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="aboutMe.html">About Me</a></li> -->
+            <li><a href="myWork.html">My Work</a></li>
+            <li><a href="WAN HAFIZUDDIN RESUME 10-JAN-2025.pdf">My Resume</a></li>
+        </ul>
+      </div>
+    </div>
+   </nav>
+  </div>
 
 
     <div class="backgroundMyWork"></div>
 </head>
 <body>
-  <h1 style="text-align: center; margin-bottom: 100px; font-family: Verdana, Geneva, Tahoma, sans-serif; color: whitesmoke;">My Work</h1>
-  <ul>
+  <div class="flex-container">
+  <div class="flex-mywork-container">
+  <!-- <ul>
     <li>
       <div class="box1">
-      <div class="tittle1"><h4 style="text-align: center;">Coming Soon...</h4></div>
-      <div class="logo1"><img src="images/R.png" alt="" style="height: 150px; padding-left:30px; padding-top: 30px;"></div>
+        <div class="tittle2"></div>
+        <div class="logo2"><img src="./images/lets-get-advive.png" style=" width: 100%;
+          height: 100%;
+          object-fit: contain;"></div>
       </div>
     </li>
       <li><div class="box2">
         <div class="tittle2"><h4 style="text-align: center;">Coming Soon...</h4></div>
-        <div class="logo2"><img src="images/R.png" alt="" style="height: 150px; padding-left:30px; padding-top: 25px;"></div>
+        <div class="logo2"><img src="./images/lets-get-advive.png" alt="" style="height: 150px; padding-left:30px; padding-top: 25px;"></div>
       </div>
       <li>
     <li><div class="box3">
@@ -87,7 +47,47 @@
       <div class="logo1"><img src="images/R.png" alt="" style="height: 150px; padding-left:30px; padding-top: 25px;"></div>
     </div>
     <li>
-    </ul>
+    </ul> -->
+
+
+    <a href="https://wanhafizuddin.github.io/osomgame/" target="_blank" class="link-box">
+    <div class="box">
+     <h1>Osom Game Website</h1>
+     <br>
+      <h3>Created an engaging, browser-based game using web
+      technologies, showcasing proficiency in interactive
+      design, user experience, and web development
+      fundamentals</h3>
+     </a>
+
+</div>
+
+    <a href="https://wanhafizuddin.github.io/get-advice/" target="_blank" class="link-box">
+    <div class="box">
+      <h1>Get Advice Website</h1>
+     <br>
+      <h3> Developed a web application that fetches random
+        advice from an API, presenting it in a clean, visually
+        engaging interface.</h3>
+       </a>
+    </div>
+ 
+
+
+    <a href="https://weather-app-1-ou8i.onrender.com/" target="_blank" class="link-box">
+    <div class="box">
+      <h1>Weather Web</h1>
+     <br>
+      <h3>This website utilizes the API to know the current weather conditions. 
+        This is also my first attempt to learn about cloud application platform. 
+        For this project, I use Render 
+        (might take minutes before the website fully reloaded)</h3>
+    </a>
+  </div>
+     
+
+    </div>
+  </div>
  
 </body>
 </html>

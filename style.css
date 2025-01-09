@@ -28,7 +28,7 @@
 }
   
 .navbar{
-  background-color: red;
+  background-color: #840000;
   font-family:  Calibri;
   padding-right: 15px;
   padding-left: 15px;
@@ -90,3 +90,323 @@ margin-right: 25px;
 .quote{
   text-align: center;
 }
+
+.backgroundMyWork{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-image:url(images/Kuala-Lumpur-Skyline-scaled-e1580202172195.jpeg) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(50px);
+  z-index: -1;
+}
+
+/* .box1{
+  height: 300px;
+  width: 205px;
+  border: solid whitesmoke 5px;
+ }
+
+.box2{
+  height: 300px;
+  width: 205px;
+  border: solid whitesmoke 5px;
+}
+
+.box3{
+  height: 400px;
+  width: 205px;
+  border: solid whitesmoke 5px;
+  text-align: center;
+ 
+} */
+
+.flex-container {
+  display: flex;
+  justify-content: center;  /* Centers row horizontally */
+  align-items: center;      /* Centers row vertically */
+  height: 100vh;            /* Full viewport height */
+}
+
+.box {
+  display: inline-block;
+  width: 70%; /* Adjust the width */
+  height: 170px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  
+
+  background: linear-gradient(135deg, rgba(255, 255,255,0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  font-size: 16px;
+  
+  font-family: Arial, sans-serif;
+  text-align: center;
+
+}
+
+.box:hover {
+  background-color:#840000;
+}
+
+.flex-mywork-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Distributes items in the row */
+  align-items: center;      /* Centers row vertically */
+  width: 80%;   /* You can adjust the width as needed */
+   max-width: 900px; /* Maximum width for the row */
+
+}
+body li{
+  list-style: none;
+  display: inline-block;
+}
+
+ul{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
+}
+
+.link-box {
+  display: block;
+}
+
+.box h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.box h3{
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 426px){
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  .profilePhoto{
+  
+    height: 300px;
+    width: 250px;
+   border: solid black;
+    margin-top: 15px;
+
+  }
+  .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image:url(images/Kuala-Lumpur-Skyline-scaled-e1580202172195.jpeg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+  }
+    
+  .navbar{
+    background-color: #840000;
+    font-family:  Calibri;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .navdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo{
+    font-size: 35px;
+    font-weight: 600px;
+    color: #fff;
+    font-size:1.5em;
+    padding-bottom: 5px;
+  }
+  
+  .navdiv li{
+    list-style: none;
+    display: inline-block;
+    font-size: 1em;
+  }
+  
+  .navdiv a{
+  color: white;
+  font-weight: bold;
+  margin-right: 25px;
+  }
+  
+  .one{
+    text-align: center;
+    justify-content: center;
+  }
+  
+  
+  .content{
+    color: #fff;
+    
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .content h1{
+    font-size: 4em;
+    margin-bottom: 5px;
+    
+  }
+  
+  .content h2{
+    font: size 35px;
+    margin-bottom: 10px;
+  }
+  
+  .logo1 li{
+    display: inline-block;
+  }
+  
+  .quote{
+    text-align: center;
+  }
+  
+  .backgroundMyWork{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image:url(images/Kuala-Lumpur-Skyline-scaled-e1580202172195.jpeg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(50px);
+    z-index: -1;
+  }
+  
+  /* .box1{
+    height: 300px;
+    width: 205px;
+    border: solid whitesmoke 5px;
+   }
+  
+  .box2{
+    height: 300px;
+    width: 205px;
+    border: solid whitesmoke 5px;
+  }
+  
+  .box3{
+    height: 400px;
+    width: 205px;
+    border: solid whitesmoke 5px;
+    text-align: center;
+   
+  } */
+  
+  .flex-container {
+    display: flex;
+    justify-content: center;  /* Centers row horizontally */
+    align-items: center;      /* Centers row vertically */
+    height: 100vh;            /* Full viewport height */
+  }
+  
+  .box {
+    display: inline-block;
+    width: 70%; /* Adjust the width */
+    height: 170px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    
+  
+    background: linear-gradient(135deg, rgba(255, 255,255,0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    font-size: 16px;
+    
+    font-family: Arial, sans-serif;
+    text-align: center;
+  
+
+  
+  }
+  
+  .link-box {
+    display: block;
+}
+  .box:hover {
+    background-color:#840000;
+  }
+
+  .box h3{
+    display: none;
+  }
+  
+  .box h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .flex-mywork-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Distributes items in the row */
+    align-items: center;      /* Centers row vertically */
+    width: 80%;   /* You can adjust the width as needed */
+     max-width: 900px; /* Maximum width for the row */
+  
+  }
+  body li{
+    list-style: none;
+    display: inline-block;
+  }
+  
+  ul{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+  }
+  
+}
+
+
