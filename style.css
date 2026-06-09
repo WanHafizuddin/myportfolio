@@ -1,3 +1,7 @@
+/* ============================
+   RESET & BASE
+   ============================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -5,408 +9,374 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-.profilePhoto{
 
-  height: 300px;
-  width: 250px;
- border: solid black;
-  margin-top: 15px;
-
+html {
+  scroll-behavior: smooth;
 }
-.background{
-  position: absolute;
+
+body {
+  font-family: 'Inter', Calibri, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================
+   NAVBAR
+   ============================ */
+.navbar {
+  background-color: rgba(132, 0, 0, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 14px 32px;
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100vh;
-  background-image:url(images/Kuala-Lumpur-Skyline-scaled-e1580202172195.jpeg) ;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  filter: blur(5px);
-  z-index: -1;
-}
-  
-.navbar{
-  background-color: #840000;
-  font-family:  Calibri;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  z-index: 100;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
 }
 
-.navdiv{
+.navdiv {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.logo{
-  font-size: 35px;
-  font-weight: 600px;
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
   color: #fff;
 }
 
-.navdiv li{
+.logo a {
+  color: #fff;
+  transition: opacity 0.2s;
+}
+
+.logo a:hover {
+  opacity: 0.8;
+}
+
+.navdiv ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   list-style: none;
-  display: inline-block;
-  font-size: 18px;
 }
 
-.navdiv a{
-color: white;
-font-weight: bold;
-margin-right: 25px;
+.navdiv li {
+  list-style: none;
 }
 
-.one{
-  text-align: center;
-  justify-content: center;
+.navdiv a {
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  letter-spacing: 0.2px;
 }
 
-
-.content{
+.navdiv a:hover {
+  background: rgba(255, 255, 255, 0.15);
   color: #fff;
-  
-  text-align: center;
+}
+
+/* ============================
+   HERO SECTION (index.html)
+   ============================ */
+.hero-wrapper {
+  position: relative;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
-.content h1{
-  font-size: 95px;
-  margin-bottom: 5px;
-}
-
-.content h2{
-  font: size 35px;
-  margin-bottom: 10px;
-}
-
-.logo1 li{
-  display: inline-block;
-}
-
-.quote{
-  text-align: center;
-}
-
-.backgroundMyWork{
+.background {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100vh;
-  background-image:url(images/Kuala-Lumpur-Skyline-scaled-e1580202172195.jpeg) ;
+  inset: 0;
+  background-image: url(images/Kuala-Lumpur-Skyline-scaled-e1580202172195.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  filter: blur(50px);
-  z-index: -1;
+  filter: blur(5px) brightness(0.55);
+  transform: scale(1.05);
+  z-index: 0;
 }
 
-/* .box1{
-  height: 300px;
-  width: 205px;
-  border: solid whitesmoke 5px;
- }
-
-.box2{
-  height: 300px;
-  width: 205px;
-  border: solid whitesmoke 5px;
-}
-
-.box3{
-  height: 400px;
-  width: 205px;
-  border: solid whitesmoke 5px;
+.content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
   text-align: center;
- 
-} */
+  padding: 48px 24px 64px;
+  animation: fadeInUp 0.7s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profilePhoto {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 4px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  margin-bottom: 24px;
+}
+
+.content h1 {
+  font-size: clamp(2.6rem, 8vw, 5rem);
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+}
+
+.content h2 {
+  font-size: clamp(1rem, 3vw, 1.35rem);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Social icons row */
+.logo1 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin-bottom: 36px;
+}
+
+.logo1 li {
+  display: inline-flex;
+}
+
+.logo1 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.logo1 a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.12);
+}
+
+.logo1 img {
+  height: 26px;
+  width: 26px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+/* CTA button */
+.cta-btn {
+  display: inline-block;
+  padding: 13px 36px;
+  background: #840000;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 50px;
+  letter-spacing: 0.4px;
+  box-shadow: 0 4px 20px rgba(132, 0, 0, 0.5);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.cta-btn:hover {
+  background: #a00000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(132, 0, 0, 0.6);
+}
+
+/* ============================
+   MY WORK PAGE
+   ============================ */
+.mywork-wrapper {
+  position: relative;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  overflow: hidden;
+}
+
+.backgroundMyWork {
+  position: absolute;
+  inset: 0;
+  background-image: url(images/Kuala-Lumpur-Skyline-scaled-e1580202172195.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(6px) brightness(0.45);
+  transform: scale(1.05);
+  z-index: 0;
+}
 
 .flex-container {
+  position: relative;
+  z-index: 1;
   display: flex;
-  justify-content: center;  /* Centers row horizontally */
-  align-items: center;      /* Centers row vertically */
-  height: 100vh;            /* Full viewport height */
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  animation: fadeInUp 0.7s ease both;
 }
 
-.box {
-  display: inline-block;
-  width: 70%; /* Adjust the width */
-  height: 170px;
-  background-color: #4CAF50;
-  color: white;
-  padding: 20px;
+.flex-mywork-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 720px;
+}
+
+.mywork-heading {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
   text-align: center;
-  margin: 10px;
-  
+  margin-bottom: 8px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  letter-spacing: -0.3px;
+}
 
-  background: linear-gradient(135deg, rgba(255, 255,255,0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-  font-size: 16px;
-  
-  font-family: Arial, sans-serif;
+.mywork-subheading {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.95rem;
   text-align: center;
-
-}
-
-.box:hover {
-  background-color:#840000;
-}
-
-.flex-mywork-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  /* Distributes items in the row */
-  align-items: center;      /* Centers row vertically */
-  width: 80%;   /* You can adjust the width as needed */
-   max-width: 900px; /* Maximum width for the row */
-
-}
-body li{
-  list-style: none;
-  display: inline-block;
-}
-
-ul{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: whitesmoke;
+  margin-bottom: 32px;
+  letter-spacing: 0.5px;
 }
 
 .link-box {
   display: block;
+  text-decoration: none;
 }
 
-.box h1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+.box {
+  background: linear-gradient(135deg, rgba(255,255,255,0.14), rgba(255,255,255,0.04));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  padding: 24px 28px;
+  color: #fff;
+  transition: transform 0.22s ease, background 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  text-align: left;
 }
 
-.box h3{
-  color: white;
+.box:hover {
+  background: linear-gradient(135deg, rgba(132,0,0,0.55), rgba(132,0,0,0.3));
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
 }
 
+.box-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  letter-spacing: -0.2px;
+}
 
+.box-desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  font-weight: 400;
+}
 
+.box-arrow {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.6);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: color 0.2s, transform 0.2s;
+}
 
+.link-box:hover .box-arrow {
+  color: rgba(255,255,255,0.95);
+  transform: translateX(4px);
+}
 
-
-
-
-
-
-
-
-
-@media screen and (max-width: 426px){
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+/* ============================
+   RESPONSIVE
+   ============================ */
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 12px 18px;
   }
-  .profilePhoto{
-  
-    height: 300px;
-    width: 250px;
-   border: solid black;
-    margin-top: 15px;
 
-  }
-  .background{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100vh;
-    background-image:url(images/Kuala-Lumpur-Skyline-scaled-e1580202172195.jpeg) ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: blur(5px);
-    z-index: -1;
-  }
-    
-  .navbar{
-    background-color: #840000;
-    font-family:  Calibri;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  
-  .navdiv{
-    display: flex;
+  .navdiv {
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    gap: 10px;
   }
-  
-  .logo{
-    font-size: 35px;
-    font-weight: 600px;
-    color: #fff;
-    font-size:1.5em;
-    padding-bottom: 5px;
+
+  .logo {
+    font-size: 1.2rem;
   }
-  
-  .navdiv li{
-    list-style: none;
-    display: inline-block;
-    font-size: 1em;
+
+  .navdiv ul {
+    gap: 2px;
   }
-  
-  .navdiv a{
-  color: white;
-  font-weight: bold;
-  margin-right: 25px;
+
+  .navdiv a {
+    font-size: 0.85rem;
+    padding: 5px 10px;
   }
-  
-  .one{
-    text-align: center;
-    justify-content: center;
+
+  .profilePhoto {
+    width: 140px;
+    height: 140px;
   }
-  
-  
-  .content{
-    color: #fff;
-    
-    text-align: center;
-    justify-content: center;
+
+  .content {
+    padding: 36px 18px 48px;
   }
-  
-  .content h1{
-    font-size: 4em;
-    margin-bottom: 5px;
-    
+
+  .flex-mywork-container {
+    gap: 16px;
   }
-  
-  .content h2{
-    font: size 35px;
-    margin-bottom: 10px;
-  }
-  
-  .logo1 li{
-    display: inline-block;
-  }
-  
-  .quote{
-    text-align: center;
-  }
-  
-  .backgroundMyWork{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100vh;
-    background-image:url(images/Kuala-Lumpur-Skyline-scaled-e1580202172195.jpeg) ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: blur(50px);
-    z-index: -1;
-  }
-  
-  /* .box1{
-    height: 300px;
-    width: 205px;
-    border: solid whitesmoke 5px;
-   }
-  
-  .box2{
-    height: 300px;
-    width: 205px;
-    border: solid whitesmoke 5px;
-  }
-  
-  .box3{
-    height: 400px;
-    width: 205px;
-    border: solid whitesmoke 5px;
-    text-align: center;
-   
-  } */
-  
-  .flex-container {
-    display: flex;
-    justify-content: center;  /* Centers row horizontally */
-    align-items: center;      /* Centers row vertically */
-    height: 100vh;            /* Full viewport height */
-  }
-  
+
   .box {
-    display: inline-block;
-    width: 70%; /* Adjust the width */
-    height: 170px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin: 10px;
-    
-  
-    background: linear-gradient(135deg, rgba(255, 255,255,0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  
-    font-size: 16px;
-    
-    font-family: Arial, sans-serif;
-    text-align: center;
-  
-
-  
+    padding: 20px 20px;
   }
-  
-  .link-box {
-    display: block;
-}
-  .box:hover {
-    background-color:#840000;
-  }
-
-  .box h3{
-    display: none;
-  }
-  
-  .box h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
-  
-  .flex-mywork-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  /* Distributes items in the row */
-    align-items: center;      /* Centers row vertically */
-    width: 80%;   /* You can adjust the width as needed */
-     max-width: 900px; /* Maximum width for the row */
-  
-  }
-  body li{
-    list-style: none;
-    display: inline-block;
-  }
-  
-  ul{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: whitesmoke;
-  }
-  
 }
 
-
+@media screen and (min-width: 700px) {
+  .flex-mywork-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
