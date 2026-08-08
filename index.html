@@ -6,139 +6,164 @@
   <title>Wan Hafizuddin — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-inner">
-      <a href="#home" class="nav-logo">WH</a>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="WAN HAFIZUDDIN RESUME 10-JAN-2025.pdf" target="_blank" class="nav-resume">Resume</a></li>
-      </ul>
-    </div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <a href="#home" class="nav-brand">Wan Hafizuddin</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="WAN HAFIZUDDIN RESUME 10-JAN-2025.pdf" target="_blank" class="nav-resume">Résumé</a></li>
+    </ul>
   </nav>
 
   <!-- HERO -->
   <section id="home" class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <img src="images/photo_2024-05-19_15-16-22.jpg" class="hero-photo" alt="Wan Hafizuddin">
-      <p class="hero-label">Hello, I'm</p>
-      <h1 class="hero-name">Wan Hafizuddin</h1>
-      <p class="hero-role">Software Engineering Student</p>
-      <p class="hero-tagline">Building things for the web &nbsp;&middot;&nbsp; Universiti Putra Malaysia &nbsp;&middot;&nbsp; Class of 2027</p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#about" class="btn btn-secondary">About Me</a>
-      </div>
-      <div class="social-row">
-        <a href="https://www.linkedin.com/in/wan-hafizuddin-b95b77245" target="_blank" aria-label="LinkedIn" class="social-link">
-          <img src="images/linkedin-basic-round-social-logo-png-13.png" alt="LinkedIn">
-        </a>
-        <a href="https://www.instagram.com/1hafizuddin" target="_blank" aria-label="Instagram" class="social-link">
-          <img src="images/transparent-instagram-logo----6.png" alt="Instagram">
-        </a>
-      </div>
+    <div class="tag tag-outline">Open to opportunities</div>
+    <h1>Wan Hafizuddin</h1>
+    <p class="hero-tagline">Software Engineering student at Universiti Putra Malaysia, building things for the web. Class of 2027.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+      <a href="https://www.linkedin.com/in/wan-hafizuddin-b95b77245" target="_blank" class="btn btn-secondary">Get in touch</a>
     </div>
-    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
-      <span></span>
-    </a>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Who I Am</span>
-        <h2 class="section-title">About Me</h2>
+  <section id="about" class="section reveal">
+    <div class="card-kicker section-kicker">About</div>
+    <h2 class="section-title">A bit about me</h2>
+    <div class="about-grid">
+      <img src="images/photo_2024-05-19_15-16-22.jpg" alt="Wan Hafizuddin" class="about-photo">
+      <div class="about-text">
+        <p>Hello! I'm <strong>Wan Hafizuddin</strong>, a Software Engineering student at <strong>Universiti Putra Malaysia</strong>, expected to graduate in 2027. I'm passionate about technology and excited about the opportunities my education is providing.</p>
+        <p>Outside of academics, I enjoy photography and gym life — activities that keep me balanced and bring a fresh perspective to my work and projects. I'm driven by a determination to become a software engineer, so feel free to reach out on LinkedIn!</p>
+        <div class="about-tags">
+          <span class="tag tag-outline">Web Development</span>
+          <span class="tag tag-outline">UI / UX</span>
+          <span class="tag tag-outline">Photography</span>
+          <span class="tag tag-outline">Volunteering</span>
+        </div>
+        <a href="WAN HAFIZUDDIN RESUME 10-JAN-2025.pdf" target="_blank" class="btn btn-secondary">Download Résumé</a>
       </div>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>Hello! I'm <strong>Wan Hafizuddin</strong>, a Software Engineering student at <strong>Universiti Putra Malaysia</strong>, expected to graduate in 2027. I'm passionate about technology and excited about the opportunities my education is providing.</p>
-          <p>Outside of academics, I enjoy photography and gym life — activities that keep me balanced and bring a fresh perspective to my work and projects.</p>
-          <p>I'm driven by a determination to become a software engineer and look forward to connecting with professionals who share my values. Feel free to reach out on LinkedIn!</p>
-          <div class="about-tags">
-            <span class="tag">Web Development</span>
-            <span class="tag">UI / UX</span>
-            <span class="tag">Photography</span>
-            <span class="tag">Volunteering</span>
-          </div>
-          <a href="WAN HAFIZUDDIN RESUME 10-JAN-2025.pdf" target="_blank" class="btn btn-outline">Download Resume</a>
-        </div>
-        <div class="about-stats">
-          <div class="stat-card">
-            <span class="stat-num">2027</span>
-            <span class="stat-label">Expected Graduation</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-num">3+</span>
-            <span class="stat-label">Projects Built</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-num">UPM</span>
-            <span class="stat-label">Universiti Putra Malaysia</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-num">SE</span>
-            <span class="stat-label">Software Engineering</span>
-          </div>
-        </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section reveal">
+    <div class="card-kicker section-kicker">Skills</div>
+    <h2 class="section-title">Tools and languages</h2>
+
+    <div class="skills-group">
+      <div class="skills-label">Languages</div>
+      <div class="skills-row">
+        <span class="tag tag-accent">HTML</span>
+        <span class="tag tag-accent">CSS</span>
+        <span class="tag tag-accent">JavaScript</span>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <div class="skills-label">Tools</div>
+      <div class="skills-row">
+        <span class="tag tag-outline">Git</span>
+        <span class="tag tag-outline">GitHub</span>
+        <span class="tag tag-outline">VS Code</span>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">What I've Built</span>
-        <h2 class="section-title">My Projects</h2>
-      </div>
-      <div class="projects-grid">
-        <a href="https://wanhafizuddin.github.io/osomgame/" target="_blank" class="project-card">
-          <div class="project-icon">&#127918;</div>
-          <h3 class="project-title">Osom Game Website</h3>
-          <p class="project-desc">An engaging browser-based game showcasing proficiency in interactive design, user experience, and web development fundamentals.</p>
-          <span class="project-link">Play it &#8594;</span>
-        </a>
-        <a href="https://wanhafizuddin.github.io/get-advice/" target="_blank" class="project-card">
-          <div class="project-icon">&#128161;</div>
-          <h3 class="project-title">Get Advice Website</h3>
-          <p class="project-desc">A web app that fetches random advice from an API, presented in a clean and visually engaging interface.</p>
-          <span class="project-link">Try it &#8594;</span>
-        </a>
-        <a href="https://weather-app-1-ou8i.onrender.com/" target="_blank" class="project-card">
-          <div class="project-icon">&#127780;</div>
-          <h3 class="project-title">Weather Web App</h3>
-          <p class="project-desc">A weather app using a live API to show current conditions. My first cloud-deployed project using Render.</p>
-          <span class="project-link">Check it out &#8594;</span>
-        </a>
+  <section id="projects" class="section reveal">
+    <div class="card-kicker section-kicker">Projects</div>
+    <h2 class="section-title">What I've built</h2>
+    <div class="projects-grid">
+      <a href="https://wanhafizuddin.github.io/osomgame/" target="_blank" class="card elev-sm project-card">
+        <div class="project-icon">&#127918;</div>
+        <div class="card-title">Osom Game Website</div>
+        <p class="card-body">An engaging browser-based game showcasing proficiency in interactive design, user experience, and web development fundamentals.</p>
+        <span class="card-link">Play it &#8594;</span>
+      </a>
+      <a href="https://wanhafizuddin.github.io/get-advice/" target="_blank" class="card elev-sm project-card">
+        <div class="project-icon">&#128161;</div>
+        <div class="card-title">Get Advice Website</div>
+        <p class="card-body">A web app that fetches random advice from an API, presented in a clean and visually engaging interface.</p>
+        <span class="card-link">Try it &#8594;</span>
+      </a>
+      <a href="https://weather-app-1-ou8i.onrender.com/" target="_blank" class="card elev-sm project-card">
+        <div class="project-icon">&#127780;</div>
+        <div class="card-title">Weather Web App</div>
+        <p class="card-body">A weather app using a live API to show current conditions. My first cloud-deployed project using Render.</p>
+        <span class="card-link">Check it out &#8594;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section reveal">
+    <div class="card-kicker section-kicker">Education</div>
+    <h2 class="section-title">Where I've studied</h2>
+    <div class="timeline">
+      <div class="timeline-rule"></div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="card elev-sm">
+          <div class="timeline-head">
+            <div class="card-title">Bachelor of Software Engineering</div>
+            <div class="card-meta">Expected 2027</div>
+          </div>
+          <div style="color: var(--color-accent-300); font-size: 14px; margin: 4px 0 8px;">Universiti Putra Malaysia</div>
+          <div class="card-body">Pursuing a degree in Software Engineering, with hands-on projects spanning web development and UI/UX design.</div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <p class="footer-name">Wan Hafizuddin</p>
-      <p class="footer-sub">Software Engineering Student &nbsp;&middot;&nbsp; UPM</p>
-      <div class="footer-social">
-        <a href="https://www.linkedin.com/in/wan-hafizuddin-b95b77245" target="_blank" aria-label="LinkedIn" class="social-link">
-          <img src="images/linkedin-basic-round-social-logo-png-13.png" alt="LinkedIn">
-        </a>
-        <a href="https://www.instagram.com/1hafizuddin" target="_blank" aria-label="Instagram" class="social-link">
-          <img src="images/transparent-instagram-logo----6.png" alt="Instagram">
-        </a>
-      </div>
-      <p class="footer-copy">&copy; 2025 Wan Hafizuddin. All rights reserved.</p>
+    <div class="hr"></div>
+    <p class="footer-name">Wan Hafizuddin</p>
+    <p class="footer-sub">Software Engineering Student &nbsp;&middot;&nbsp; UPM</p>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/wan-hafizuddin-b95b77245" target="_blank" aria-label="LinkedIn" class="social-link">
+        <img src="images/linkedin-basic-round-social-logo-png-13.png" alt="LinkedIn">
+      </a>
+      <a href="https://www.instagram.com/1hafizuddin" target="_blank" aria-label="Instagram" class="social-link">
+        <img src="images/transparent-instagram-logo----6.png" alt="Instagram">
+      </a>
     </div>
+    <p class="footer-copy">&copy; 2026 Wan Hafizuddin. All rights reserved.</p>
   </footer>
+
+  <script>
+    var revealTargets = document.querySelectorAll('.reveal');
+    var itemTargets = document.querySelectorAll('.projects-grid .card, .timeline-item');
+    itemTargets.forEach(function (el) { el.classList.add('reveal-item'); });
+
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      revealTargets.forEach(function (el) { observer.observe(el); });
+      itemTargets.forEach(function (el) { observer.observe(el); });
+    } else {
+      revealTargets.forEach(function (el) { el.classList.add('is-visible'); });
+      itemTargets.forEach(function (el) { el.classList.add('is-visible'); });
+    }
+  </script>
 
 </body>
 </html>
