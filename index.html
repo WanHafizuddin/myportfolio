@@ -3,167 +3,309 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wan Hafizuddin — Portfolio</title>
+  <title>Wan Hafizuddin — Software Engineering Student</title>
+  <meta name="description" content="Wan Hafizuddin — Software Engineering student at Universiti Putra Malaysia, building things for the web. Class of 2027.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="ambient-glow" aria-hidden="true"></div>
+  <div id="topo" class="topo-bg" aria-hidden="true"></div>
 
   <!-- NAV -->
-  <nav class="nav" id="navbar">
-    <a href="#home" class="nav-brand">Wan Hafizuddin</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="WAN HAFIZUDDIN RESUME 10-JAN-2025.pdf" target="_blank" class="nav-resume">Résumé</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="tag tag-outline">Open to opportunities</div>
-    <h1>Wan Hafizuddin</h1>
-    <p class="hero-tagline">Software Engineering student at Universiti Putra Malaysia, building things for the web. Class of 2027.</p>
-    <div class="hero-actions">
-      <a href="#projects" class="btn btn-primary">View My Work</a>
-      <a href="https://www.linkedin.com/in/wan-hafizuddin-b95b77245" target="_blank" class="btn btn-secondary">Get in touch</a>
+  <header class="nav">
+    <div class="wrap">
+      <a href="#home" class="brand"><span class="mark">WH</span> Wan Hafizuddin</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Work</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="WAN HAFIZUDDIN RESUME 10-JAN-2025.pdf" target="_blank" rel="noopener" class="btn-resume">Résumé</a>
     </div>
-  </section>
+  </header>
 
-  <!-- ABOUT -->
-  <section id="about" class="section reveal">
-    <div class="card-kicker section-kicker">About</div>
-    <h2 class="section-title">A bit about me</h2>
-    <div class="about-grid">
-      <img src="images/photo_2024-05-19_15-16-22.jpg" alt="Wan Hafizuddin" class="about-photo">
-      <div class="about-text">
-        <p>Hello! I'm <strong>Wan Hafizuddin</strong>, a Software Engineering student at <strong>Universiti Putra Malaysia</strong>, expected to graduate in 2027. I'm passionate about technology and excited about the opportunities my education is providing.</p>
-        <p>Outside of academics, I enjoy photography and gym life — activities that keep me balanced and bring a fresh perspective to my work and projects. I'm driven by a determination to become a software engineer, so feel free to reach out on LinkedIn!</p>
-        <div class="about-tags">
-          <span class="tag tag-outline">Web Development</span>
-          <span class="tag tag-outline">UI / UX</span>
-          <span class="tag tag-outline">Photography</span>
-          <span class="tag tag-outline">Volunteering</span>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="wrap">
+        <div class="status data">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Available</span>
+          <span class="sep" aria-hidden="true">/</span>
+          <span>Kuala Lumpur</span>
+          <span class="sep" aria-hidden="true">/</span>
+          <span class="clock" id="clock" aria-label="Current local time in Kuala Lumpur">—</span>
         </div>
-        <a href="WAN HAFIZUDDIN RESUME 10-JAN-2025.pdf" target="_blank" class="btn btn-secondary">Download Résumé</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section reveal">
-    <div class="card-kicker section-kicker">Skills</div>
-    <h2 class="section-title">Tools and languages</h2>
+        <p class="hero-hi">Hey, I'm</p>
+        <h1>Wan Hafizuddin<span class="dot">.</span></h1>
+        <p class="hero-lead"><b>Software Engineering</b> student at Universiti Putra Malaysia, building things for the web — and paying attention to the details people feel but never notice. Class of <b>2027</b>.</p>
 
-    <div class="skills-group">
-      <div class="skills-label">Languages</div>
-      <div class="skills-row">
-        <span class="tag tag-accent">HTML</span>
-        <span class="tag tag-accent">CSS</span>
-        <span class="tag tag-accent">JavaScript</span>
-      </div>
-    </div>
+        <div class="hero-chips">
+          <span class="chip">Web Development</span>
+          <span class="chip">UI / UX</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Photography</span>
+        </div>
 
-    <div class="skills-group">
-      <div class="skills-label">Tools</div>
-      <div class="skills-row">
-        <span class="tag tag-outline">Git</span>
-        <span class="tag tag-outline">GitHub</span>
-        <span class="tag tag-outline">VS Code</span>
-      </div>
-    </div>
-  </section>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my work <span class="arw" aria-hidden="true">→</span></a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section reveal">
-    <div class="card-kicker section-kicker">Projects</div>
-    <h2 class="section-title">What I've built</h2>
-    <div class="projects-grid">
-      <a href="https://wanhafizuddin.github.io/osomgame/" target="_blank" class="card elev-sm project-card">
-        <div class="project-icon">&#127918;</div>
-        <div class="card-title">Osom Game Website</div>
-        <p class="card-body">An engaging browser-based game showcasing proficiency in interactive design, user experience, and web development fundamentals.</p>
-        <span class="card-link">Play it &#8594;</span>
-      </a>
-      <a href="https://wanhafizuddin.github.io/get-advice/" target="_blank" class="card elev-sm project-card">
-        <div class="project-icon">&#128161;</div>
-        <div class="card-title">Get Advice Website</div>
-        <p class="card-body">A web app that fetches random advice from an API, presented in a clean and visually engaging interface.</p>
-        <span class="card-link">Try it &#8594;</span>
-      </a>
-      <a href="https://weather-app-1-ou8i.onrender.com/" target="_blank" class="card elev-sm project-card">
-        <div class="project-icon">&#127780;</div>
-        <div class="card-title">Weather Web App</div>
-        <p class="card-body">A weather app using a live API to show current conditions. My first cloud-deployed project using Render.</p>
-        <span class="card-link">Check it out &#8594;</span>
-      </a>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education" class="section reveal">
-    <div class="card-kicker section-kicker">Education</div>
-    <h2 class="section-title">Where I've studied</h2>
-    <div class="timeline">
-      <div class="timeline-rule"></div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="card elev-sm">
-          <div class="timeline-head">
-            <div class="card-title">Bachelor of Software Engineering</div>
-            <div class="card-meta">Expected 2027</div>
+        <div class="stats data" aria-label="Highlights">
+          <div class="stat">
+            <div class="num" data-target="3" data-pad="2">00</div>
+            <div class="lbl">Projects shipped</div>
           </div>
-          <div style="color: var(--color-accent-300); font-size: 14px; margin: 4px 0 8px;">Universiti Putra Malaysia</div>
-          <div class="card-body">Pursuing a degree in Software Engineering, with hands-on projects spanning web development and UI/UX design.</div>
+          <div class="stat">
+            <div class="num" data-target="3" data-pad="2">00</div>
+            <div class="lbl">Core languages</div>
+          </div>
+          <div class="stat">
+            <div class="num" data-target="2027">0</div>
+            <div class="lbl">Graduating</div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <div class="wrap">
+        <div class="eyebrow"><span class="idx">01</span> <span>About</span> <span class="rule"></span></div>
+        <div class="about-grid">
+          <img src="images/photo_2024-05-19_15-16-22.jpg" alt="Portrait of Wan Hafizuddin" class="about-photo" loading="lazy">
+          <div class="about-text">
+            <p>Hello — I'm <b>Wan Hafizuddin</b>, a Software Engineering student at <b>Universiti Putra Malaysia</b>, graduating in 2027. I'm genuinely excited by what I get to build, and I keep sharpening my craft one project at a time.</p>
+            <p>Away from the screen I'm into <b>photography</b> and the <b>gym</b> — habits that keep me steady and bring a fresh eye back to my work. I'm set on becoming a software engineer, so if that resonates, let's talk.</p>
+            <div class="about-chips">
+              <span class="chip">Web Development</span>
+              <span class="chip">UI / UX</span>
+              <span class="chip">Photography</span>
+              <span class="chip">Volunteering</span>
+            </div>
+            <a href="WAN HAFIZUDDIN RESUME 10-JAN-2025.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Download résumé <span class="arw" aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+      <div class="wrap">
+        <div class="eyebrow"><span class="idx">02</span> <span>Stack</span> <span class="rule"></span></div>
+        <h2 class="section-title">Tools &amp; languages</h2>
+        <div class="skills-block">
+          <div class="skills-head">Languages</div>
+          <div class="skills-row">
+            <span class="tile">HTML</span>
+            <span class="tile">CSS</span>
+            <span class="tile">JavaScript</span>
+          </div>
+        </div>
+        <div class="skills-block">
+          <div class="skills-head">Tools</div>
+          <div class="skills-row">
+            <span class="tile">Git</span>
+            <span class="tile">GitHub</span>
+            <span class="tile">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section id="projects" class="section reveal">
+      <div class="wrap">
+        <div class="eyebrow"><span class="idx">03</span> <span>Selected Work</span> <span class="rule"></span></div>
+        <h2 class="section-title">What I've built</h2>
+        <div class="works">
+          <a href="https://wanhafizuddin.github.io/osomgame/" target="_blank" rel="noopener" class="work">
+            <span class="wk-idx">W-01</span>
+            <span class="wk-main">
+              <span class="wk-title">Osom Game</span>
+              <span class="wk-desc">A browser-based game built to sharpen interactive design, user experience, and the core fundamentals of the web.</span>
+              <span class="wk-tags"><span class="wk-tag">Browser Game</span><span class="wk-tag">HTML / CSS / JS</span><span class="wk-tag">2024</span></span>
+            </span>
+            <span class="wk-go" aria-hidden="true">→</span>
+          </a>
+          <a href="https://wanhafizuddin.github.io/get-advice/" target="_blank" rel="noopener" class="work">
+            <span class="wk-idx">W-02</span>
+            <span class="wk-main">
+              <span class="wk-title">Get Advice</span>
+              <span class="wk-desc">A small web app that pulls random advice from a live API into a clean, focused interface.</span>
+              <span class="wk-tags"><span class="wk-tag">Live API</span><span class="wk-tag">JavaScript</span><span class="wk-tag">2024</span></span>
+            </span>
+            <span class="wk-go" aria-hidden="true">→</span>
+          </a>
+          <a href="https://weather-app-1-ou8i.onrender.com/" target="_blank" rel="noopener" class="work">
+            <span class="wk-idx">W-03</span>
+            <span class="wk-main">
+              <span class="wk-title">Weather Web App</span>
+              <span class="wk-desc">Live current conditions from a weather API — my first cloud-deployed project, running on Render.</span>
+              <span class="wk-tags"><span class="wk-tag">Live API</span><span class="wk-tag">Render</span><span class="wk-tag">Deployed</span></span>
+            </span>
+            <span class="wk-go" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section reveal">
+      <div class="wrap">
+        <div class="eyebrow"><span class="idx">04</span> <span>Education</span> <span class="rule"></span></div>
+        <div class="edu">
+          <span class="edu-dot" aria-hidden="true"></span>
+          <div class="edu-main">
+            <div class="edu-deg">Bachelor of Software Engineering</div>
+            <div class="edu-org">Universiti Putra Malaysia</div>
+            <p class="edu-note">Hands-on coursework across web development and UI/UX, with projects built end to end.</p>
+          </div>
+          <div class="edu-when data">Expected 2027</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal">
+      <div class="wrap">
+        <div class="eyebrow"><span class="idx">05</span> <span>Contact</span> <span class="rule"></span></div>
+        <h2 class="section-title">Let's connect</h2>
+        <p class="contact-lead">Open to internships and junior roles — or just a good conversation about building for the web.</p>
+        <div class="contact-list">
+          <a href="mailto:whafiz012@gmail.com" class="crow">
+            <span class="crow-k">Email</span>
+            <span class="crow-v">whafiz012@gmail.com</span>
+            <span class="crow-go" aria-hidden="true">→</span>
+          </a>
+          <a href="https://www.linkedin.com/in/wan-hafizuddin-b95b77245" target="_blank" rel="noopener" class="crow">
+            <span class="crow-k">LinkedIn</span>
+            <span class="crow-v">wan-hafizuddin</span>
+            <span class="crow-go" aria-hidden="true">→</span>
+          </a>
+          <a href="https://www.instagram.com/1hafizuddin" target="_blank" rel="noopener" class="crow">
+            <span class="crow-k">Instagram</span>
+            <span class="crow-v">@1hafizuddin</span>
+            <span class="crow-go" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="hr"></div>
-    <p class="footer-name">Wan Hafizuddin</p>
-    <p class="footer-sub">Software Engineering Student &nbsp;&middot;&nbsp; UPM</p>
-    <div class="footer-social">
-      <a href="https://www.linkedin.com/in/wan-hafizuddin-b95b77245" target="_blank" aria-label="LinkedIn" class="social-link">
-        <img src="images/linkedin-basic-round-social-logo-png-13.png" alt="LinkedIn">
-      </a>
-      <a href="https://www.instagram.com/1hafizuddin" target="_blank" aria-label="Instagram" class="social-link">
-        <img src="images/transparent-instagram-logo----6.png" alt="Instagram">
-      </a>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Let's Connect</span><span>Let's Connect</span><span>Let's Connect</span><span>Let's Connect</span>
+        <span>Let's Connect</span><span>Let's Connect</span><span>Let's Connect</span><span>Let's Connect</span>
+      </div>
     </div>
-    <p class="footer-copy">&copy; 2026 Wan Hafizuddin. All rights reserved.</p>
+    <div class="wrap">
+      <div class="foot-bar">
+        <a href="#home" class="brand"><span class="mark">WH</span> Wan Hafizuddin</a>
+        <span class="foot-meta">© 2026 · Software Engineering · UPM</span>
+        <div class="socials">
+          <a href="mailto:whafiz012@gmail.com" class="social" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/wan-hafizuddin-b95b77245" target="_blank" rel="noopener" class="social" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9h4v12H3zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.3c0-1.26-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21h-4z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/1hafizuddin" target="_blank" rel="noopener" class="social" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script>
-    var revealTargets = document.querySelectorAll('.reveal');
-    var itemTargets = document.querySelectorAll('.projects-grid .card, .timeline-item');
-    itemTargets.forEach(function (el) { el.classList.add('reveal-item'); });
+    // Live Kuala Lumpur clock
+    (function () {
+      var el = document.getElementById('clock');
+      if (!el) return;
+      var fmt = new Intl.DateTimeFormat('en-US', {
+        hour: 'numeric', minute: '2-digit', second: '2-digit',
+        hour12: true, timeZone: 'Asia/Kuala_Lumpur'
+      });
+      function tick() { el.textContent = fmt.format(new Date()); }
+      tick();
+      setInterval(tick, 1000);
+    })();
 
-    if ('IntersectionObserver' in window) {
-      var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            observer.unobserve(entry.target);
+    // Count-up stats
+    function countUp(el) {
+      var target = parseFloat(el.getAttribute('data-target')) || 0;
+      var pad = parseInt(el.getAttribute('data-pad'), 10) || 0;
+      var dur = 1400, start = null;
+      function frame(ts) {
+        if (start === null) start = ts;
+        var p = Math.min((ts - start) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        var val = Math.round(target * eased);
+        var text = String(val);
+        while (text.length < pad) text = '0' + text;
+        el.textContent = text;
+        if (p < 1) requestAnimationFrame(frame);
+        else el.textContent = pad ? String(target).padStart(pad, '0') : String(target);
+      }
+      requestAnimationFrame(frame);
+    }
+
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Reveal-on-scroll + trigger count-up when stats appear
+    (function () {
+      var reveals = document.querySelectorAll('.reveal');
+      var stats = document.querySelector('.stats');
+
+      function fillStats() {
+        document.querySelectorAll('.stat .num').forEach(function (n) {
+          if (reduce) {
+            var t = n.getAttribute('data-target');
+            var pad = parseInt(n.getAttribute('data-pad'), 10) || 0;
+            n.textContent = pad ? String(t).padStart(pad, '0') : t;
+          } else {
+            countUp(n);
           }
         });
-      }, { threshold: 0.15 });
+      }
 
-      revealTargets.forEach(function (el) { observer.observe(el); });
-      itemTargets.forEach(function (el) { observer.observe(el); });
-    } else {
-      revealTargets.forEach(function (el) { el.classList.add('is-visible'); });
-      itemTargets.forEach(function (el) { el.classList.add('is-visible'); });
-    }
+      if (!('IntersectionObserver' in window)) {
+        reveals.forEach(function (el) { el.classList.add('in'); });
+        fillStats();
+        return;
+      }
+
+      var ro = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); }
+        });
+      }, { threshold: 0.14 });
+      reveals.forEach(function (el) { ro.observe(el); });
+
+      if (stats) {
+        var so = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { fillStats(); so.disconnect(); }
+          });
+        }, { threshold: 0.4 });
+        so.observe(stats);
+      } else {
+        fillStats();
+      }
+    })();
   </script>
+
+  <script type="module" src="topography.js"></script>
 
 </body>
 </html>
