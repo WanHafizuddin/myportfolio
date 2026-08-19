@@ -178,6 +178,29 @@ main { position: relative; z-index: 1; }
   margin: 2px 0 0;
 }
 .hero h1 .dot { color: var(--flame); }
+
+/* ---- MASKED HEADING ----
+   The name is filled with a looping warm gradient clipped to the letterforms —
+   kept in the flame family (ember -> flame -> a travelling cream glint) so it
+   reads on-theme, not as a rainbow. masked-name.js slides it: a slow flow, plus
+   pointer parallax and idle drift, so the glint travels under the type like
+   light over molten metal. Adapted from the React Bits <MaskedHeading />. */
+.mh-fill {
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(90deg,
+    #d8430c, #f3500f, #ff7a44, #fff0d0, #ff8a4a, #d8430c);
+  background-size: 200% 100%;
+  background-repeat: repeat-x;
+  background-position: 0% 50%;
+  will-change: background-position;
+}
+/* Browsers without background-clip:text keep a solid, legible accent fill. */
+@supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+  .mh-fill { background: none; color: var(--flame); -webkit-text-fill-color: currentColor; }
+}
 .hero-lead {
   max-width: 620px; margin-top: 22px;
   font-size: 20px; font-weight: 400; line-height: 1.55; color: var(--muted);
@@ -290,7 +313,14 @@ main { position: relative; z-index: 1; }
 
 /* ---- FOOTER ---- */
 .footer { border-top: 1px solid var(--line); padding-top: 0; }
-.marquee { overflow: hidden; padding: 30px 0; border-bottom: 1px solid var(--line); }
+/* Dark, dimmed band so the ghost "Let's Connect" reads against a calm surface
+   instead of the busy topographic background moving behind the footer. */
+.marquee {
+  overflow: hidden; padding: 30px 0; border-bottom: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.62);
+  -webkit-backdrop-filter: blur(3px) brightness(0.5);
+  backdrop-filter: blur(3px) brightness(0.5);
+}
 .marquee-track { display: flex; width: max-content; animation: marquee 26s linear infinite; }
 .marquee-track span {
   font-size: clamp(2.4rem, 7vw, 4.6rem); font-weight: 700; text-transform: uppercase; letter-spacing: -0.01em;
