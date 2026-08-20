@@ -44808,14 +44808,14 @@ const bX = `
 .lanyard-canvas {
   position: relative;
   width: 100%;
-  height: 480px;
+  height: 640px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media (max-width: 720px) {
   .lanyard-canvas {
-    height: 360px;
+    height: 480px;
   }
 }
 `;
@@ -44824,7 +44824,7 @@ function FX() {
   if (!g) return;
   const A = document.createElement("style");
   A.textContent = bX, document.head.appendChild(A), lF(g).render(
-    /* @__PURE__ */ MI.jsx(yX, { frontImage: "/images/photo_2024-05-19_15-16-22.jpg" })
+    /* @__PURE__ */ MI.jsx(yX, { position: [0, 0, 18], frontImage: "/images/photo_2024-05-19_15-16-22.jpg" })
   );
 }
 FX();

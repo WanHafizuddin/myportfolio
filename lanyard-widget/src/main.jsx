@@ -5,14 +5,14 @@ const STYLES = `
 .lanyard-canvas {
   position: relative;
   width: 100%;
-  height: 480px;
+  height: 640px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media (max-width: 720px) {
   .lanyard-canvas {
-    height: 360px;
+    height: 480px;
   }
 }
 `;
@@ -26,7 +26,7 @@ function mount() {
   document.head.appendChild(style);
 
   createRoot(root).render(
-    <Lanyard frontImage="/images/photo_2024-05-19_15-16-22.jpg" />
+    <Lanyard position={[0, 0, 18]} frontImage="/images/photo_2024-05-19_15-16-22.jpg" />
   );
 }
 

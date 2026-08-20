@@ -156,7 +156,7 @@ main { position: relative; z-index: 1; }
 .hero { padding: 60px 0 86px; }
 .hero .wrap { display: flex; align-items: center; gap: 48px; }
 .hero-content { flex: 1 1 480px; min-width: 0; }
-.hero-visual { flex: 1 1 380px; min-width: 280px; }
+.hero-visual { flex: 1 1 460px; min-width: 340px; }
 .status {
   display: inline-flex; align-items: center; flex-wrap: wrap; gap: 8px 12px;
   max-width: 100%;
