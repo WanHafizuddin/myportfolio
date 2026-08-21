@@ -154,9 +154,6 @@ main { position: relative; z-index: 1; }
 
 /* ---- HERO ---- */
 .hero { padding: 60px 0 86px; }
-.hero .wrap { display: flex; align-items: center; gap: 48px; }
-.hero-content { flex: 1 1 480px; min-width: 0; }
-.hero-visual { flex: 1 1 460px; min-width: 340px; }
 .status {
   display: inline-flex; align-items: center; flex-wrap: wrap; gap: 8px 12px;
   max-width: 100%;
@@ -380,7 +377,6 @@ main { position: relative; z-index: 1; }
   .nav-links { display: none; }
   .section { padding: 72px 0; }
   .hero { padding: 40px 0 64px; }
-  .hero .wrap { flex-direction: column; }
   .work { grid-template-columns: auto 1fr; }
   .work .wk-go { display: none; }
   .edu { grid-template-columns: 1fr; gap: 12px; }
